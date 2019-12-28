@@ -40,12 +40,13 @@ html {
 }
 
 canvas {
-  @extend %whole-container;
-  @extend %center-content;
   width: 100%;
   height: 100vh;
-  position: absolute;
-}
+  position:fixed !important;
+  left:0;
+  top:0;
+  z-index: -50;
+  }
 
 #example {
   flex-grow: 1;
@@ -89,10 +90,10 @@ p {
 
 
 // ============= MAIN LAYOUT ==============
-.game-container canvas {
+game-container canvas {
   width: 100vh !important;
   height: 100vh !important;
-  position: inherit;
+  position: fixed;
   z-index: -50;
 }
 

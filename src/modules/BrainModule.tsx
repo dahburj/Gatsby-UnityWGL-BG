@@ -49,42 +49,8 @@ class WindowFrame extends React.Component {
                       <p>Thu, 14 Jun | 16:20</p>
                     </div>
                   </div>
-              {/*    <nav className="nav">
-                    <ul className="nav__menu">
-                    <li className="nav__item">
-                        <a href="#Home" className="nav__link" data-scroll-to>
-                        <div className="media">
-                            <img src="https://images.pexels.com/photos/1544947/pexels-photo-1544947.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" className="media__img" />
-                            <h4 className="media__content">
-                            {/*<strong>Home</strong>*
-                              Home
-                            </h4>
-                        </div>
-                        </a>
-                    </li>
-                    <li className="nav__item">
-                        <a href="#Playground" className="nav__link" data-scroll-to>
-                        <div className="media">
-                            <img src="https://lonelyplanetimages.imgix.net/mastheads/stock-photo-st-stephens-church-112868985.jpg?sharp=10&vib=20&w=2000" alt="" className="media__img" />
-                            <h4 className="media__content">
-                            PlayGround
-                            </h4>
-                        </div>
-                        </a>
-                    </li>
-                    <li className="nav__item">
-                        <a href="#paidProjects" className="nav__link" data-scroll-to>
-                        <div className="media">
-                            <img src="https://lonelyplanetimages.imgix.net/mastheads/GettyImages-538096543_medium.jpg?sharp=10&vib=20&w=2000" alt="" className="media__img" />
-                            <h4 className="media__content">
-                            <strong>Professional Projects</strong>
-                            </h4>
-                        </div>
-                        </a>
-                    </li>
-                    </ul>
-                </nav> */}
                   <div className="main">
+                    <Observer onChange={this.triggerHomeAnim}>
                       <div className="sectionTwo" id="Home" data-section>
                           <div className="sectionTwo__header">  
                             <div className="sectionTwo__controls">  
@@ -99,6 +65,7 @@ class WindowFrame extends React.Component {
                       <div className="sectionTwo__content">
                       </div>
                       </div>
+                    </Observer>
                     <Observer onChange={this.triggerAdhdAnim}>
                       <div className="sectionOne" id="Playground" data-section>
                         <header className="sectionOne__header">
@@ -107,26 +74,6 @@ class WindowFrame extends React.Component {
                       </header>
                         <div className="sectionOne__content">
                           <ul className="boxgrid">
-                            <Link to="/BrainPage/">
-                              <li className="boxgrid__item">
-                                  <a href="#" className="box box--posenet">
-                                    <img src="https://img.icons8.com/ios/96/000000/yoga.png" style={{height: 150, width:150, bottom: 0, position: "fixed"}} />
-                                  </a>
-                                </li>
-                            </Link>
-                            <Link to="/faceDetector/">
-                              <li className="boxgrid__item boxgrid__item--wide">
-                                <a href="#" className="box box--image">
-                                </a>
-                              </li>
-                            </Link>
-                            <Link to="/OpticalFlowPage/">
-                              <li className="boxgrid__item boxgrid__item">
-                                <a href="#" className="box box--optical-flow">
-                                  <div /><div /><div />
-                                </a>
-                              </li>
-                            </Link>
                           </ul>
                         </div>
                       </div>
