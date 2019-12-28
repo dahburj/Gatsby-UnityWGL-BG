@@ -6,7 +6,6 @@ import Observer from "@researchgate/react-intersection-observer";
 import "../styles/index-new.scss"
 import { render } from 'react-dom';
 import { Link } from "gatsby";
-import Logo from "../components/logo";
 import Layout from '../components/layout-2';
 
 
@@ -23,7 +22,7 @@ class WindowFrame extends React.Component {
             visibility: event.isIntersecting ? 'visible' : 'invisible',
         });
     };
-     
+
     triggerAdhdAnim = (event) => {
         return event.isIntersecting ? this.unityContent.send("GameController","TriggerAnimFunc", "inADHD true") : this.unityContent.send("GameController","TriggerAnimFunc", "inADHD false");
     }
