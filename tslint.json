@@ -1,0 +1,17 @@
+{
+  "extends": ["tslint-react"],
+  "rules": {
+    "prettier": true,
+    "jsx-no-multiline-js": false,
+    "jsx-no-lambda": false,
+    "no-boolean-literal-compare": false
+    },
+  "defaultSeverity": "warning",
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js"
+    ]
+  }
+}
